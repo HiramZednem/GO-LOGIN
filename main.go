@@ -19,5 +19,5 @@ func main() {
 	r.HandleFunc("/get/user/{id}", routes.GetUser).Methods("GET")
 	r.HandleFunc("/login", routes.Login).Methods("POST")
 
-	http.ListenAndServe(":3000", r)
+	http.ListenAndServe(":8080", r)
 }
